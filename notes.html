@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Notes - Java Repository</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modern.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-java"></i>
+                <span>Java Repository</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="programs.html" class="nav-link"><i class="fas fa-code"></i> Programs</a></li>
+                <li><a href="notes.html" class="nav-link active"><i class="fas fa-sticky-note"></i> Notes</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Notes Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Java Notes</h1>
+            <p>Comprehensive notes covering all Java concepts</p>
+        </div>
+    </section>
+
+    <!-- Notes Categories -->
+    <section class="notes-categories">
+        <div class="container">
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">All Topics</button>
+                <button class="category-btn" data-category="basics">Java Basics</button>
+                <button class="category-btn" data-category="oop">OOP Concepts</button>
+                <button class="category-btn" data-category="collections">Collections</button>
+                <button class="category-btn" data-category="exceptions">Exceptions</button>
+                <button class="category-btn" data-category="multithreading">Multithreading</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notes Grid -->
+    <section class="notes-section">
+        <div class="container">
+            <div class="notes-grid" id="notesGrid">
+                <!-- Notes will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Note Viewer Modal -->
+    <div id="noteModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="noteModalTitle">Note Title</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="noteModalContent"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="printNote">Print Note</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Java Repository</h3>
+                    <p>Your comprehensive Java learning resource</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="notes.html">Notes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@javarepository.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Java Repository. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/notes-manager.js"></script>
+</body>
+</html>
