@@ -34,7 +34,10 @@
     <section class="page-header">
         <div class="container">
             <h1>Java Programs</h1>
-            <p>Browse through our extensive collection of Java programs</p>
+            <p>Browse through our collection of Java programs</p>
+            <div class="file-count">
+                <span id="fileCount">Loading programs...</span>
+            </div>
         </div>
     </section>
 
@@ -50,7 +53,8 @@
                 <button class="filter-btn" data-filter="basic">Basic</button>
                 <button class="filter-btn" data-filter="oop">OOP</button>
                 <button class="filter-btn" data-filter="datastructures">Data Structures</button>
-                <button class="filter-btn" data-filter="algorithms">Algorithms</button>
+                <button class="filter-btn" data-filter="arrays">Arrays</button>
+                <button class="filter-btn" data-filter="loops">Loops</button>
             </div>
         </div>
     </section>
@@ -58,8 +62,17 @@
     <!-- Programs Grid -->
     <section class="programs-section">
         <div class="container">
+            <div class="loading-spinner" id="loadingSpinner">
+                <div class="spinner"></div>
+                <p>Loading Java programs...</p>
+            </div>
             <div class="programs-grid" id="programsGrid">
-                <!-- Programs will be loaded here -->
+                <!-- Programs will be loaded dynamically -->
+            </div>
+            <div class="no-programs" id="noPrograms" style="display: none;">
+                <i class="fas fa-folder-open"></i>
+                <h3>No Java Programs Found</h3>
+                <p>Add your Java files to the programs folder</p>
             </div>
         </div>
     </section>
@@ -72,6 +85,9 @@
                 <span class="close">&times;</span>
             </div>
             <div class="modal-body">
+                <div class="code-header">
+                    <span id="fileName"></span>
+                </div>
                 <pre><code id="modalCode"></code></pre>
             </div>
             <div class="modal-footer">
@@ -114,6 +130,6 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/file-viewer.js"></script>
+    <script src="js/file-loader.js"></script>
 </body>
 </html>
